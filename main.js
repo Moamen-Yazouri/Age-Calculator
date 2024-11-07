@@ -22,6 +22,7 @@ calculateBtn.addEventListener("click", () => {
     if(todayBirthDate > todayDate) {
          todayBirthDate.setFullYear(todayDate.getFullYear() - 1);
     }
+    // Calculations
     let diffInMs = todayDate - todayBirthDate;
     let diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
     let diffInMonths = Math.abs(todayM - userM);
